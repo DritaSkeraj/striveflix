@@ -27,8 +27,9 @@
         <div style="border: 1px solid #ccc; width: 70%; margin: 0 auto;"></div>
         <div class='row justify-content-center mt-4'>
             <div class='col-lg-2'>
-                <div class="d-flex justify-content-start">
-                    <img src='../imgs/strive.png' alt='profile picture' id='profilePic' class='img-fluid'/>
+                <div class="d-flex justify-content-end">
+                    <span class='pen'><img src='../imgs/pen.png' width='20px' height='20px'></span>
+                    <img src='../imgs/strive.png' alt='profile picture' id='profilePic' class='img-fluid '/>
                 </div>
             </div>
             <div class='col-lg-6'>
@@ -50,8 +51,44 @@
                             </div>
                         </div>
                     </div>
-                    <div style="border: 1px solid #ccc; width: 100%; margin: 0 auto;" class='row mt-1'></div>
+                    <div style="border: 1px solid #ccc; width: 100%; margin: 0 auto;" class='row m-4'></div>
+
+                    <div class='row'>
+                        <h6>Maturity Settings: </h6>
+                    </div>
+                    <div class='row'>
+                        <input type='text' value='All Maturity Ratings' id='mInput'/>
+                    </div>
+                    <div class='row'>
+                        <p>Show titles of all maturity ratings for this program: </p>
+                    </div>
+                    <input type='button' value='Edit' id='editBtn'/>
+
+                    <div style="border: 1px solid #ccc; width: 100%; margin: 0 auto;" class='row m-4'></div>
+                    <h6>Autoplay controls:</h6>
+                    <div class='row'>
+                        <label>
+                            <input type="checkbox" name="first" value="value" />
+                            <span style="margin-left: 10px;">    Autoplay next episode in a series of all devices</span>
+                        </label>
+                    </div>
+                    <div class='row'>
+                        <!-- <label for='first' class='mt-1'>
+                        <input type='checkbox' name='first'/>
+                        Autoplay previous by browsing on all devices</label>
+                        <br> -->
+                        <label>
+                            <input type="checkbox" name="second" value="value" />
+                            <span style="margin-left: 10px;">    Autoplay previous by browsing on all devices</span>
+                        </label>
+                    </div>
             </div>
+        </div>
+        <div style="border: 1px solid #ccc; width: 70%; margin: 0 auto;" class='row'></div>
+        <div class='row d-flex justify-content-center mt-2'>
+            <input class = 'endBtns' type='button' value='SAVE' />
+            <input class = 'endBtns' type='button' value='CANCEL' />
+            <input class = 'endBtns' type='button' value='DELETE PROFILE' />
         </div>
     </div>
 
